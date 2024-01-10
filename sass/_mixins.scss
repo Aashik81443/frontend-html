@@ -1,0 +1,9 @@
+@mixin primary-text-gradient{
+    background: linear-gradient(225deg,$soft-red,$dark-violet);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin primary-gradient{
+    background: linear-gradient(225deg,$soft-red,$dark-violet);
+
+}

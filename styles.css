@@ -142,8 +142,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
-  background-color: #ffffff;
+  color: #1A202C;
+  background-color: #FAFAFA;
 }
 
 .pro-regular {
@@ -301,7 +301,7 @@ h4,
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: red;
+  background: linear-gradient(225deg, #f76680, #57007B);
   width: 55px;
   height: 5px;
 }

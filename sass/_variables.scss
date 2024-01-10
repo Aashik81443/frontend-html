@@ -19,17 +19,17 @@ $font-base-size: 18px;
 $font-base-line-height: 30px;
 
 //colors
-$white: #ffffff;
+$white: #FAFAFA;;
 $gray-100: #f8f9fa;
 $gray-200: #E5EBFF;
-$gray-300: #dee2e6;
+$gray-300: #E2E8F0;;
 $gray-400: #C1C1C1;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
+$gray-500: #A0AEC0;
+$gray-600: #718096;
+$gray-700: #4A5568;
+$gray-800: #2D3748;
 $gray-900: #2A2A2A;
-$black: #000000;
+$black: #1A202C;
 $blue: #097af3;
 $indigo: #6610f2;
 $purple: #6f42c1;
@@ -41,10 +41,18 @@ $green: #28a745;
 $teal: #20c997;
 $cyan: #17a2b8;
 
-$soft-red:#F7666F;
+$soft-red: #f76680;
+$dark-violet: #57007B;
+$soft-blue: #6675f7;
+$light-blue: #406AFF;
+$dark-blue: #0D1C9F;
+$bright-blue: #3d63ea;
+$soft-pink: #DE4396;
 
-$primary: $blue;
-$secondary: $gray-600;
+
+
+$primary: $dark-violet;
+$secondary: $soft-red;
 $tertiary: $red;
 
 //body background
