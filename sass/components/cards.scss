@@ -1,32 +1,53 @@
-.card-service{
-    border: 2px solid transparent;
-    border-radius: 7px;
-    width: 333px;
-    padding: 38.5px 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: all 1s;
-    img{
-        padding: 12px;
-        border: 2px solid $primary;
-        border-radius: 58px;
-        margin: 38.5px 0px 15px 0px;
-    };
-    h4{
-        @include primary-text-gradient;
-        margin-bottom: 20px;
-    };
-    p{
-        font-size: 14px;
-        font-weight: 400;
-    };
-    &:hover{
-        border: 2px solid $primary;
-        cursor: pointer;
-    };
-    @include sm {
+.card {
+    &-service {
         border: 2px solid transparent;
         border-radius: 7px;
-        width: 333px;
-        padding: 38.5px 16px;
+        max-width: 333px;
+        padding: 28px 16px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.5s;
+        cursor: pointer;
+
+        @include lg {
+            padding: 38.5px 16px;
+        }
+
+        &:hover {
+            border: 2px solid $primary;
+        }
+
+        &__media {
+            display: inline-block;
+            width: 58px;
+            height: 58px;
+            padding: 12px;
+            border: 2px solid $primary;
+            border-radius: 100%;
+            margin-bottom: 15px;
+        }
+
+        &__info {
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: $font-regular;
+
+            h4 {
+                @include primary-text-gradient;
+                margin-bottom: 10px;
+
+                @include lg {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+    }
+
+    &-video{
+
+    }
+
+    &-article{
+        
     }
 }
