@@ -1,6 +1,4 @@
 .block-title {
-    text-align: center;
-
     h2 {
         display: inline-block;
         position: relative;
@@ -34,6 +32,16 @@
             &::before {
                 left: 0;
                 transform: translateX(0);
+            }
+        }
+    }
+
+    &--normal{
+        h2{
+            padding-top: 0;
+
+            &::before{
+                display: none;
             }
         }
     }
