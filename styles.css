@@ -290,6 +290,51 @@ h4,
   }
 }
 
+.btn {
+  padding: 14px 25px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.btn a {
+  text-decoration: none;
+}
+.btn h4 {
+  color: #FAFAFA;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.btn-violet-gradient {
+  background: linear-gradient(225deg, #6675F7 0%, #57007B 100%);
+}
+
+.btn-yellow-gradient {
+  background: linear-gradient(225deg, #FFC656 0%, #F16063 100%);
+  border: 1px solid #fff;
+}
+
+.btn-primary {
+  padding: 16px 28px;
+  border-radius: 5px;
+  background-color: #3d63ea;
+  display: inline-block;
+}
+.btn-primary a {
+  text-decoration: none;
+}
+.btn-primary h4 {
+  color: #FAFAFA;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+@media (min-width: 768px) {
+  .btn-primary {
+    padding: 19px 30px;
+  }
+}
+
 .block-title h2 {
   display: inline-block;
   position: relative;

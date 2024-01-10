@@ -1,0 +1,47 @@
+.btn {
+    padding: 14px 25px;
+    border-radius: 5px;
+    display: inline-block;
+
+    a {
+        text-decoration: none;
+    }
+
+    h4 {
+        color: $white;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+    }
+}
+
+.btn-violet-gradient {
+    background: linear-gradient(225deg, #6675F7 0%, #57007B 100%);
+}
+
+.btn-yellow-gradient {
+    background: linear-gradient(225deg, #FFC656 0%, #F16063 100%);
+    border: 1px solid #fff;
+}
+
+.btn-primary {
+    padding: 16px 28px;
+    border-radius: 5px;
+    background-color: $bright-blue;
+    display: inline-block;
+
+    a {
+        text-decoration: none;
+    }
+
+    h4 {
+        color: $white;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+    }
+
+    @include md {
+        padding: 19px 30px;
+    }
+}
