@@ -2,7 +2,8 @@
 
 //font family
 $font-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !default;
-$font-family-base: $font-segoe;
+$font-inter: 'Inter', sans-serif;
+$font-family-base: $font-inter;
 
 //font weights
 $font-normal: 300;
@@ -11,11 +12,11 @@ $font-medium: 500;
 $font-semi-bold: 600;
 $font-bold: 700;
 $font-heavy: 800;
-$font-extra-bold: 800;
+$font-extra-bold: 900;
 
 //font-sizes
-$font-base-size: 16px;
-$font-base-line-height: 28px;
+$font-base-size: 18px;
+$font-base-line-height: 30px;
 
 //colors
 $white: #ffffff;
@@ -39,6 +40,8 @@ $yellow: #FFBA4A;
 $green: #28a745;
 $teal: #20c997;
 $cyan: #17a2b8;
+
+$soft-red:#F7666F;
 
 $primary: $blue;
 $secondary: $gray-600;
@@ -77,7 +80,7 @@ $container-max-widths-sm: 540px !default;
 $container-max-widths-md: 720px !default;
 $container-max-widths-lg: 960px !default;
 $container-max-widths-xl: 1140px !default;
-$container-max-widths-xxl: 1310px;
+$container-max-widths-xxl: 1280px;
 
 //container padding
-$container-padding: 0 20px;
+$container-padding: 0 24px;

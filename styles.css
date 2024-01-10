@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("Avenir-Black.eot");
+  src: url("Avenir-Black.eot?#iefix") format("embedded-opentype"), url("Avenir-Black.woff2") format("woff2"), url("Avenir-Black.woff") format("woff"), url("Avenir-Black.ttf") format("truetype"), url("Avenir-Black.svg#Avenir-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.bg-cover {
+  position: relative;
+  z-index: 0;
+}
+.bg-cover > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pro-regular {
+  font-weight: 400;
+}
+
+.strong,
+.bold,
+strong {
+  font-weight: 700;
+}
+
+.italics,
+.italic {
+  font-style: italic;
+}
+
+.upper,
+.uppercase {
+  text-transform: uppercase;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 0.65em;
+  line-height: 0;
+  color: inherit;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: 0.65em;
+  line-height: 0;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+.h1 {
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 44px;
+}
+@media (min-width: 992px) {
+  h1,
+  .h1 {
+    font-size: 45px;
+    line-height: 51px;
+  }
+}
+@media (min-width: 1200px) {
+  h1,
+  .h1 {
+    font-size: 53px;
+    line-height: 71px;
+  }
+}
+
+h2,
+.h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+}
+@media (min-width: 992px) {
+  h2,
+  .h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  h2,
+  .h2 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+}
+
+h3,
+.h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+@media (min-width: 992px) {
+  h3,
+  .h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+h4,
+.h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 24px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.block-title {
+  text-align: center;
+}
+.block-title h2 {
+  display: inline-block;
+  position: relative;
+  padding-top: 20px;
+}
+.block-title h2::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  width: 55px;
+  height: 5px;
+}
+@media (min-width: 992px) {
+  .block-title h2::before {
+    width: 69px;
+  }
+}
+.block-title h2 span {
+  font-weight: 400;
+  display: block;
+}
+.block-title--alt {
+  text-align: left;
+}
+.block-title--alt h2::before {
+  left: 0;
+  transform: translateX(0);
+}
+
+/*# sourceMappingURL=styles.css.map */
