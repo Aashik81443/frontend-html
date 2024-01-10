@@ -328,4 +328,41 @@ h4,
   display: none;
 }
 
+.card-service {
+  border: 2px solid transparent;
+  border-radius: 7px;
+  width: 333px;
+  padding: 38.5px 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 1s;
+}
+.card-service img {
+  padding: 12px;
+  border: 2px solid #57007B;
+  border-radius: 58px;
+  margin: 38.5px 0px 15px 0px;
+}
+.card-service h4 {
+  background: linear-gradient(225deg, #f76680, #57007B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.card-service p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.card-service:hover {
+  border: 2px solid #57007B;
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  .card-service {
+    border: 2px solid transparent;
+    border-radius: 7px;
+    width: 333px;
+    padding: 38.5px 16px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

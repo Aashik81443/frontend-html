@@ -1,0 +1,32 @@
+.card-service{
+    border: 2px solid transparent;
+    border-radius: 7px;
+    width: 333px;
+    padding: 38.5px 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 1s;
+    img{
+        padding: 12px;
+        border: 2px solid $primary;
+        border-radius: 58px;
+        margin: 38.5px 0px 15px 0px;
+    };
+    h4{
+        @include primary-text-gradient;
+        margin-bottom: 20px;
+    };
+    p{
+        font-size: 14px;
+        font-weight: 400;
+    };
+    &:hover{
+        border: 2px solid $primary;
+        cursor: pointer;
+    };
+    @include sm {
+        border: 2px solid transparent;
+        border-radius: 7px;
+        width: 333px;
+        padding: 38.5px 16px;
+    }
+}
