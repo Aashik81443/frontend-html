@@ -208,4 +208,61 @@
             }
         }
     }
+
+    &-resources{
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: $font-medium;
+        max-width: 254px;
+        position: relative;
+
+        &-img{
+            margin-bottom: 20px;
+
+            @include xsDown{
+                margin-bottom: 5px;
+            }
+        }
+
+        h6{
+            font-weight: $font-semi-bold;
+            margin-bottom: 20px;
+
+        @include xsDown{
+            font-size: 15px;
+            font-weight: $font-semi-bold;
+            margin-bottom: 5px;
+        }
+
+        }
+
+        &-btn{
+            position: relative;
+            left: 50%;
+        }
+        
+    }
+
+    &-alcaline{
+        width: 313px;
+        padding: 22px 33px 26px 21px;
+        border: 1px solid #E7DAED;
+        border-radius: 9px;
+    
+        h5{
+            font-size: 18px;
+            font-weight: $font-bold;
+            margin-bottom: 15px;
+
+            span{
+                @include primary-text-gradient;
+            }
+        }
+
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: $font-regular;
+        }
+    }
 }
