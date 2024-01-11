@@ -43,11 +43,42 @@
 
     }
 
-    &-video{
+    &-video {
+        max-width: 601px;
+        min-height: 460px;
+        position: relative;
 
-    }
+        @include smDown {
+            max-width: 416px;
+            min-height: 316px;
+            position: relative;
+        }
 
-    &-article{
-        
+        @include xsDown {
+            max-width: 288px;
+            min-height: 219px;
+            position: relative;
+        }
+
+        &-playbutton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @include smDown {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            @include xsDown {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
 }
