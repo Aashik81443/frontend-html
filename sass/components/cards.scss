@@ -135,4 +135,77 @@
             }
         }
     }
+
+    &-case-studies {
+        display: flex;
+        flex-direction: column;
+
+        @include xxl {
+            flex-direction: row;
+        }
+
+        &__media {
+            margin-bottom: -6px;
+
+            @include md {
+                margin-bottom: -12px;
+
+            }
+
+            @include xxl {
+                margin-right: -6px;
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__info {
+            padding: 38px 38px;
+            background-color: $pale-blue;
+            border: 1px solid $gray-violet;
+            border-top: none;
+            border-radius: 0 0px 30px 30px;
+            max-width: 100%;
+
+            @include md {
+                padding: 52px 52px;
+            }
+
+            @include xxl {
+                padding: 66px 52px;
+            }
+
+            @include xxl {
+                border-left: none;
+                border-top: 1px solid $gray-violet;
+                border-radius: 0 30px 30px 0;
+            }
+
+            @include xxl {
+                max-width: 634px;
+            }
+
+            p {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                font-size: 14px;
+                line-height: 22px;
+                color: $gray-700;
+
+                @include xxl {
+                    margin-top: 30px;
+                    margin-bottom: 60px;
+                }
+            }
+
+            .cta {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
 }
