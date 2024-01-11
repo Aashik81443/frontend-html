@@ -45,39 +45,28 @@
 
     &-video {
         max-width: 601px;
-        min-height: 460px;
         position: relative;
+        border-radius: 22px;
 
-        @include smDown {
-            max-width: 416px;
-            min-height: 316px;
-            position: relative;
-        }
-
-        @include xsDown {
-            max-width: 288px;
-            min-height: 219px;
-            position: relative;
-        }
-
-        &-playbutton {
+        &__playbutton {
             position: absolute;
+            width: 50px;
+            height: 50px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
 
-            @include smDown {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            @include md {
+                width: 60px;
+                height: 60px;
             }
-
-            @include xsDown {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            @include lg {
+                width: 65px;
+                height: 65px;
+            }
+            @include xl {
+                width: 78px;
+                height: 78px;
             }
         }
     }
@@ -209,57 +198,57 @@
         }
     }
 
-    &-resources{
+    &-resources {
         font-size: 16px;
         line-height: 25px;
         font-weight: $font-medium;
         max-width: 254px;
         position: relative;
 
-        &-img{
+        &-img {
             margin-bottom: 20px;
 
-            @include xsDown{
+            @include xsDown {
                 margin-bottom: 5px;
             }
         }
 
-        h6{
+        h6 {
             font-weight: $font-semi-bold;
             margin-bottom: 20px;
 
-        @include xsDown{
-            font-size: 15px;
-            font-weight: $font-semi-bold;
-            margin-bottom: 5px;
-        }
+            @include xsDown {
+                font-size: 15px;
+                font-weight: $font-semi-bold;
+                margin-bottom: 5px;
+            }
 
         }
 
-        &-btn{
+        &-btn {
             position: relative;
             left: 50%;
         }
-        
+
     }
 
-    &-alcaline{
+    &-alcaline {
         width: 313px;
         padding: 22px 33px 26px 21px;
         border: 1px solid #E7DAED;
         border-radius: 9px;
-    
-        h5{
+
+        h5 {
             font-size: 18px;
             font-weight: $font-bold;
             margin-bottom: 15px;
 
-            span{
+            span {
                 @include primary-text-gradient;
             }
         }
 
-        p{
+        p {
             font-size: 14px;
             line-height: 20px;
             font-weight: $font-regular;
