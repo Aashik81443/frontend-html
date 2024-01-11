@@ -335,6 +335,37 @@ h4,
   }
 }
 
+.btn-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.btn-secondary a {
+  text-decoration: none;
+}
+.btn-secondary h4 {
+  color: #57007B;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.btn-gradient-secondary a {
+  text-decoration: none;
+}
+.btn-gradient-secondary h4 {
+  background: linear-gradient(225deg, #f76680, #57007B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 12px;
+}
+@media (max-width: 575.98px) {
+  .btn-gradient-secondary h4 {
+    font-size: 18px;
+  }
+}
+
 .block-title h2 {
   display: inline-block;
   position: relative;
