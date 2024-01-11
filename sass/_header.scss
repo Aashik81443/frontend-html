@@ -1,0 +1,25 @@
+.navbar {
+    height: 79px;
+    padding: 18.5px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 1px 25px 10px rgba($black, $alpha: 0.1) ;
+
+    &-links {
+        width: 645px;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            color: $black;
+
+            &:hover{
+                @include primary-text-gradient;
+            }
+        }
+    }
+}
