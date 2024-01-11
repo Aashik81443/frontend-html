@@ -265,4 +265,99 @@
             font-weight: $font-regular;
         }
     }
+
+    &-customer {
+        text-align: center;
+        max-width: 138px;
+        transition: all 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2, 1.2);
+            max-width: 200px;
+
+            @include sm {
+                transform: scale(1.5, 1.5);
+            }
+
+            h4 {
+                font-size: $font-base-size;
+                font-weight: $font-bold;
+                color: $primary;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+                color: #000;
+            }
+
+            .overlay {
+                display: none;
+            }
+
+            .pp {
+                box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &__media {
+
+            display: flex;
+            justify-content: center;
+            border-radius: 100%;
+
+            img {
+                border-radius: 100%;
+                width: 85px;
+                height: 85px;
+                position: relative;
+            }
+
+            .overlay {
+                border-radius: 100%;
+                width: 85px;
+                height: 85px;
+                background-color: #E7DAED;
+                opacity: 60%;
+                position: absolute;
+            }
+
+
+        }
+
+        &__ratings {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            margin: 8px 0;
+
+            @include sm {
+                margin: 10px 0;
+            }
+        }
+
+        &__name {
+            h4 {
+                font-size: 16px;
+                font-weight: $font-medium;
+                line-height: 25px;
+                color: $gray-500;
+
+                @include sm {
+                    margin-bottom: 2px;
+                }
+
+            }
+        }
+
+        &__company {
+            p {
+                font-size: 12px;
+                font-weight: $font-regular;
+                line-height: 20px;
+                color: $gray-400;
+            }
+        }
+    }
 }
