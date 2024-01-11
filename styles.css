@@ -414,6 +414,51 @@ h4,
   display: none;
 }
 
+.block-subtitle__block p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  position: relative;
+  background: linear-gradient(225deg, #f76680, #57007B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 18px;
+  margin-bottom: 18px;
+  max-width: 435px;
+}
+@media (min-width: 992px) {
+  .block-subtitle__block p {
+    margin-bottom: 24px;
+  }
+}
+.block-subtitle__block p::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  background: linear-gradient(225deg, #f76680, #57007B);
+  width: 3px;
+  height: 100%;
+}
+.block-subtitle__member {
+  display: flex;
+  align-items: center;
+}
+.block-subtitle__member .media {
+  margin-right: 10px;
+}
+.block-subtitle__member .info p {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+}
+.block-subtitle__member .info .position {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  color: #718096;
+  margin-top: 5px;
+}
+
 .card-service {
   border: 2px solid transparent;
   border-radius: 7px;
