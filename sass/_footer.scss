@@ -1,0 +1,114 @@
+.site-footer {
+    margin-top: 100px;
+
+    p {
+        color: $gray-600;
+        font-size: 14px;
+        line-height: 20px;
+
+        @include sm {
+            font-size: $font-base-size;
+            line-height: $font-base-line-height;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__row-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 18px;
+
+        @include lg {
+            gap: 32px;
+        }
+
+        @include xl {
+            flex-wrap: nowrap;
+            gap: 70px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .title {
+            p {
+                color: $gray-700;
+            }
+
+            font-weight: $font-bold;
+        }
+
+        .col-1 {
+            .dummyText {
+                margin-top: 8px;
+                margin-bottom: 20px;
+
+                @include lg {
+                    margin-top: 14px;
+                    margin-bottom: 36px;
+                }
+            }
+        }
+
+        .col-2 {
+            .links {
+                margin-top: 4px;
+
+                @include sm {
+                    margin-top: 20px;
+                }
+
+                p {
+                    line-height: $font-base-line-height;
+                    line-height: 22px;
+
+                    @include sm {
+                        line-height: 38px;
+                    }
+                }
+            }
+        }
+
+        .col-3 {
+            .dummyText {
+                margin: 4px 0;
+
+                @include sm {
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .col-4 {
+            img {
+                box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+                background-color: $white;
+                // border: 1px solid $black;
+                border-radius: 100%;
+                padding: 10px;
+            }
+        }
+
+    }
+
+    &__row-2 {
+        border-top: 1px solid $gray-400;
+        padding: 16px 0;
+        text-align: center;
+
+        @include sm {
+            padding: 32px 0;
+        }
+
+        p {
+            color: $gray-700;
+            letter-spacing: -0.07px;
+        }
+    }
+}
