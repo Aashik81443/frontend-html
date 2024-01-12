@@ -1014,5 +1014,15 @@ h4,
   position: relative;
   z-index: 2;
 }
+.block-services h2 {
+  text-align: center;
+  padding-top: 46px;
+  margin-bottom: 63px;
+}
+.block-services__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 155px;
+}
 
 /*# sourceMappingURL=styles.css.map */
