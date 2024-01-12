@@ -1,0 +1,82 @@
+.block {
+    &-herowrapper {
+        margin-top: 69px;
+
+        @include lgDown {
+            margin-top: 10px;
+         }
+
+        &__info{
+            display: flex;
+            align-items: center;
+
+            @include lgDown {
+                flex-direction: column-reverse;
+             }
+            
+            h1{
+                font-weight: $font-regular;
+                margin-bottom: 28px;
+                max-width: 520px;
+
+                @include lgDown {              
+                  margin-bottom: 20px;
+                }
+
+                @include smDown{
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+                @include xsDown{
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+
+            p{
+                line-height: 36px;
+                margin-bottom: 75px;
+                max-width: 531px;
+
+                @include lgDown {
+                    margin-bottom: 25px;
+                 }
+                 @include smDown{
+                   font-size: 18px;
+                   margin-bottom: 16px;
+                }
+                @include xsDown{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .alt {
+            font-weight: $font-regular;
+            @include primary-text-gradient;
+        }
+
+        .bld{
+            font-weight: $font-bold;
+        }
+
+        img{
+            @include lgDown {
+                width: 514px;
+                height: 446px;
+            }
+
+            @include smDown{
+                width: 414px;
+                height: 346px;
+            }
+
+        @include xsDown{
+            width: 314px;
+            height: 246px;
+        }
+        }
+
+    }
+}
