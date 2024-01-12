@@ -787,6 +787,37 @@ h4,
   color: #CBD5E0;
 }
 
+.tab-bar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 766px;
+}
+.tab-bar__tabs {
+  padding: 2px 0;
+  position: relative;
+}
+.tab-bar__tabs a {
+  text-decoration: none;
+  color: inherit;
+}
+.tab-bar__tabs:hover p {
+  background: linear-gradient(225deg, #f76680, #57007B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+}
+.tab-bar__tabs:hover::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  background: linear-gradient(225deg, #f76680, #57007B);
+  width: 50%;
+  height: 3px;
+  border-radius: 3px;
+  transform: translateX(50%);
+}
+
 .navbar {
   height: 79px;
   padding: 18.5px 25px;
