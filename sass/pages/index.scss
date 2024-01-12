@@ -1,51 +1,59 @@
 .block {
     &-herowrapper {
         margin-top: 69px;
+        border-bottom: 1px solid #E7DAED;
+        position: relative;
 
         @include lgDown {
             margin-top: 10px;
-         }
+            position: relative;
+        }
 
-        &__info{
+        &__info {
             display: flex;
             align-items: center;
+            margin-bottom: 71px;
 
             @include lgDown {
                 flex-direction: column-reverse;
-             }
-            
-            h1{
+                margin-bottom: 35px;
+            }
+
+            h1 {
                 font-weight: $font-regular;
                 margin-bottom: 28px;
                 max-width: 520px;
 
-                @include lgDown {              
-                  margin-bottom: 20px;
+                @include lgDown {
+                    margin-bottom: 20px;
                 }
 
-                @include smDown{
+                @include smDown {
                     font-size: 30px;
                     line-height: 38px;
                 }
-                @include xsDown{
+
+                @include xsDown {
                     font-size: 24px;
                     line-height: 28px;
                 }
             }
 
-            p{
+            p {
                 line-height: 36px;
                 margin-bottom: 75px;
                 max-width: 531px;
 
                 @include lgDown {
                     margin-bottom: 25px;
-                 }
-                 @include smDown{
-                   font-size: 18px;
-                   margin-bottom: 16px;
                 }
-                @include xsDown{
+
+                @include smDown {
+                    font-size: 18px;
+                    margin-bottom: 16px;
+                }
+
+                @include xsDown {
                     font-size: 14px;
                     line-height: 18px;
                 }
@@ -57,26 +65,48 @@
             @include primary-text-gradient;
         }
 
-        .bld{
+        .bld {
             font-weight: $font-bold;
         }
 
-        img{
+        img {
             @include lgDown {
                 width: 514px;
                 height: 446px;
             }
 
-            @include smDown{
+            @include smDown {
                 width: 414px;
                 height: 346px;
             }
 
-        @include xsDown{
-            width: 314px;
-            height: 246px;
-        }
+            @include xsDown {
+                width: 314px;
+                height: 246px;
+            }
         }
 
+        .circle {
+            position: absolute;
+            bottom: 0;
+            right: 70%;
+            transform: translate(107px, 33px);
+            z-index: 1;
+
+            @include lgDown {
+                width: 45px;
+                height: 45px;
+                bottom: 5px;
+                position: absolute;             
+            }
+
+           
+        }
+    }
+
+    &-services{
+        background-color: #F9F9FF;
+        position: relative;
+        z-index: 2;
     }
 }
