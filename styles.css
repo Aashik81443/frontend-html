@@ -554,7 +554,8 @@ h4,
   height: 56px;
   background-color: #27272E;
   padding: 12px;
-  border-radius: 10px;
+  .
+            border-radius: 10px;
   margin-right: 25px;
 }
 @media (max-width: 575.98px) {
