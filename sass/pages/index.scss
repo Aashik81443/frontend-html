@@ -97,33 +97,35 @@
                 width: 45px;
                 height: 45px;
                 bottom: 5px;
-                position: absolute;             
+                position: absolute;
             }
 
-           
+
         }
     }
 
-    &-services{
+    &-services {
         background-color: #F9F9FF;
         position: relative;
         z-index: 2;
 
-        h2{
+        h2 {
             text-align: center;
             padding-top: 46px;
             margin-bottom: 63px;
         }
 
-        &__cards{
+        &__cards {
             display: flex;
             justify-content: space-between;
             margin-bottom: 155px;
         }
     }
+
     &-videosection {
         position: relative;
         padding: 185px 0 72px 0;
+
         .row-1 {
             display: flex;
             justify-content: space-between;
@@ -182,7 +184,8 @@
                 position: absolute;
             }
         }
-        .circle-top{
+
+        .circle-top {
             position: absolute;
             top: 0;
             z-index: -1;
@@ -196,20 +199,93 @@
             }
         }
     }
-    &-clients{
+
+    &-clients {
         background-color: #f7f7fa;
-        .content{
+
+        .content {
             display: flex;
             justify-content: center;
             padding: 60px 0;
-            @include lgDown{
+
+            @include lgDown {
                 padding: 45px 0;
             }
         }
-        img{
+
+        img {
             margin-right: 54px;
-            @include lgDown{
+
+            @include lgDown {
                 margin-right: 34px;
+            }
+        }
+    }
+
+    &-testimonial {
+        padding: 125px 0 140px 0;
+
+        .row-1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .col-2 {
+                .review::before {
+                    content: url(/assets/images/fluent_comma-left.png);
+                    position: absolute;
+                    top: -10px;
+                    left: 130px;
+
+                    @include lgDown {
+                        left: -30px;
+                    }
+                    @include smDown{
+                        left: -30px;
+                    }
+                }
+                }
+
+                .review::after {
+                    content: url(/assets/images/fluent_comma-right.png);
+                    position: absolute;
+                    bottom: -10px;
+                    right: 130px;
+
+                    @include lgDown {
+                        right: -30px;
+                    }
+                }
+            }
+
+            .review {
+                position: relative;
+
+                p {
+                    max-width: 535px;
+                    text-align: center;
+                    margin: 64px auto;
+                    color: $gray-600;
+
+            }
+        }
+
+        .col-2 {
+            .Customers {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 72px;
+
+
+                @include lgDown {
+                    gap: 45px;
+                    @include mdDown{
+                        .hide-content{
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }

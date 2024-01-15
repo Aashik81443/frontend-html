@@ -715,12 +715,12 @@ h4,
   cursor: pointer;
 }
 .card-customer:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1, 1);
   max-width: 200px;
 }
 @media (min-width: 576px) {
   .card-customer:hover {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.1, 1.1);
   }
 }
 .card-customer:hover h4 {
@@ -1121,6 +1121,66 @@ h4,
 @media (max-width: 992px) {
   .block-clients img {
     margin-right: 34px;
+  }
+}
+.block-testimonial {
+  padding: 125px 0 140px 0;
+}
+.block-testimonial .row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.block-testimonial .row-1 .col-2 .review::before {
+  content: url(/assets/images/fluent_comma-left.png);
+  position: absolute;
+  top: -10px;
+  left: 130px;
+}
+@media (max-width: 992px) {
+  .block-testimonial .row-1 .col-2 .review::before {
+    left: -30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .block-testimonial .row-1 .col-2 .review::before {
+    left: -30px;
+  }
+}
+.block-testimonial .row-1 .review::after {
+  content: url(/assets/images/fluent_comma-right.png);
+  position: absolute;
+  bottom: -10px;
+  right: 130px;
+}
+@media (max-width: 992px) {
+  .block-testimonial .row-1 .review::after {
+    right: -30px;
+  }
+}
+.block-testimonial .review {
+  position: relative;
+}
+.block-testimonial .review p {
+  max-width: 535px;
+  text-align: center;
+  margin: 64px auto;
+  color: #718096;
+}
+.block-testimonial .col-2 .Customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+}
+@media (max-width: 992px) {
+  .block-testimonial .col-2 .Customers {
+    gap: 45px;
+  }
+}
+@media (max-width: 992px) and (max-width: 991.98px) {
+  .block-testimonial .col-2 .Customers .hide-content {
+    display: none;
   }
 }
 
