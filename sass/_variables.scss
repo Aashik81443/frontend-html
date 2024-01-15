@@ -19,7 +19,8 @@ $font-base-size: 18px;
 $font-base-line-height: 30px;
 
 //colors
-$white: #FAFAFA;;
+$pure-white: #FFF;
+$white: #FAFAFA;
 $gray-100: #f8f9fa;
 $gray-200: #E5EBFF;
 $gray-300: #E2E8F0;;
@@ -62,7 +63,7 @@ $tertiary: $red;
 
 //body background
 
-$body-background: $white !default;
+$body-background: $pure-white !default;
 $body-color: $black !default;
 
 

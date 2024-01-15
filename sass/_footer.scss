@@ -1,6 +1,4 @@
 .site-footer {
-    margin-top: 100px;
-
     p {
         color: $gray-600;
         font-size: 14px;
@@ -46,13 +44,18 @@
 
         .col-1 {
             .dummyText {
-                margin-top: 8px;
+                margin-top: 10px;
                 margin-bottom: 20px;
 
                 @include lg {
-                    margin-top: 14px;
+                    margin-top: 30px;
                     margin-bottom: 36px;
                 }
+            }
+
+            .google {
+                width: 200px;
+                height: 54px;
             }
         }
 
@@ -65,8 +68,13 @@
                 }
 
                 p {
+                    width: 136px;
                     line-height: $font-base-line-height;
                     line-height: 22px;
+
+                    &:hover {
+                        @include primary-text-gradient
+                    }
 
                     @include sm {
                         line-height: 38px;
@@ -86,13 +94,27 @@
         }
 
         .col-4 {
+
+            .socials {
+                display: flex;
+                gap: 16px;
+                justify-content: end;
+                margin-top: 0;
+
+                @include xl {
+                    margin-top: 250%;
+                }
+            }
+
             img {
                 box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
                 background-color: $white;
-                // border: 1px solid $black;
-                border-radius: 100%;
-                padding: 10px;
+                border-radius: 20px;
+                padding: 12px;
+                width: 100%;
+                height: auto;
             }
+
         }
 
     }
@@ -101,9 +123,11 @@
         border-top: 1px solid $gray-400;
         padding: 16px 0;
         text-align: center;
+        margin-top: 24px;
 
-        @include sm {
+        @include lg {
             padding: 32px 0;
+            margin-top: 82px;
         }
 
         p {
