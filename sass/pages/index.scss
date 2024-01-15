@@ -121,4 +121,96 @@
             margin-bottom: 155px;
         }
     }
+    &-videosection {
+        position: relative;
+        padding: 185px 0 72px 0;
+        .row-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include lgDown {
+                flex-direction: column-reverse;
+
+                .col-1 {
+                    margin-top: 45px;
+                }
+            }
+
+            p {
+                padding: 30px 0 50px 0;
+                max-width: 530px;
+                color: $gray-600;
+
+                .gradient-text {
+                    @include primary-text-gradient;
+                }
+
+                @include smDown {
+                    padding: 20px 0 35px 0;
+                }
+            }
+        }
+
+        .row-2 {
+            padding-top: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: last baseline;
+
+            @include lgDown {
+                justify-content: space-around;
+                padding-top: 80px;
+            }
+
+            @include smDown {
+                padding-top: 50px;
+            }
+        }
+
+        .circle {
+            bottom: 0;
+            left: 35%;
+            transform: translate(107px, 33px);
+            z-index: -1;
+            position: absolute;
+
+            @include lgDown {
+                width: 45px;
+                height: 45px;
+                bottom: 10px;
+                position: absolute;
+            }
+        }
+        .circle-top{
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            left: 8%;
+
+            @include lgDown {
+                width: 45px;
+                height: 45px;
+                top: 10px;
+                position: absolute;
+            }
+        }
+    }
+    &-clients{
+        background-color: #f7f7fa;
+        .content{
+            display: flex;
+            justify-content: center;
+            padding: 60px 0;
+            @include lgDown{
+                padding: 45px 0;
+            }
+        }
+        img{
+            margin-right: 54px;
+            @include lgDown{
+                margin-right: 34px;
+            }
+        }
+    }
 }
