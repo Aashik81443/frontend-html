@@ -108,6 +108,7 @@
         background-color: #F9F9FF;
         position: relative;
         z-index: 2;
+        min-height: 602.34px;
 
         h2 {
             text-align: center;
@@ -117,8 +118,11 @@
 
         &__cards {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 155px;
+            flex-wrap: wrap;
+
+            .card-service{
+                margin: 20px;
+            }
         }
     }
 
@@ -190,6 +194,7 @@
             top: 0;
             z-index: -1;
             left: 8%;
+            transform: translateY(-50%);
 
             @include lgDown {
                 width: 45px;
@@ -520,7 +525,7 @@
             max-width: 534px;
 
             @media only screen and (max-width: 1200px){
-                flex-shrink: 3;
+                flex-shrink: 2;
                 margin: 0 auto;
             }
 
