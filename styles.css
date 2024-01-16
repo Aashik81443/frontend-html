@@ -1237,6 +1237,31 @@ h4,
     display: none;
   }
 }
+.block-resources {
+  margin-top: 32px;
+}
+@media (min-width: 768px) {
+  .block-resources {
+    margin-top: 64px;
+  }
+}
+@media (min-width: 992px) {
+  .block-resources {
+    margin-top: 96px;
+  }
+}
+.block-resources__title {
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .block-resources__title {
+    margin-bottom: 66px;
+  }
+}
+.block-resources__cards {
+  display: flex;
+  overflow: hidden;
+}
 .block-hire {
   margin-top: 80px;
   margin-bottom: 60px;

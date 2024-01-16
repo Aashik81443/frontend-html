@@ -352,6 +352,34 @@
 
     }
 
+    &-resources {
+        margin-top: 32px;
+
+        @include md {
+            margin-top: 64px;
+        }
+
+        @include lg {
+            margin-top: 96px;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+
+            @include lg {
+                margin-bottom: 66px;
+            }
+        }
+
+        &__cards {
+            display: flex;
+            // justify-content: space-between;
+            // gap: 60px;
+            overflow: hidden;
+        }
+    }
+
+
     &-hire {
         margin-top: 80px;
         margin-bottom: 60px;
