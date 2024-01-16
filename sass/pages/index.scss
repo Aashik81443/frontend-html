@@ -217,7 +217,7 @@
         }
 
         img {
-            margin:0 24px;
+            margin: 0 24px;
 
             @include lgDown {
                 margin: 0 16px;
@@ -338,7 +338,8 @@
             top: -120px;
             z-index: 1;
             left: 10%;
-            @include lgDown{
+
+            @include lgDown {
                 display: none;
             }
         }
@@ -348,7 +349,8 @@
             z-index: 1;
             right: 10%;
             top: -120px;
-            @include lgDown{
+
+            @include lgDown {
                 display: none;
             }
         }
@@ -367,7 +369,11 @@
         }
 
         &__title {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+
+            @include sm {
+                margin-bottom: 40px;
+            }
 
             @include lg {
                 margin-bottom: 66px;
@@ -376,9 +382,19 @@
 
         &__cards {
             display: flex;
-            // justify-content: space-between;
-            // gap: 60px;
             overflow: hidden;
+
+            .card-resources {
+                margin-right: 20px;
+
+                @include sm {
+                    margin-right: 40px;
+                }
+
+                @include lg {
+                    margin-right: 60px;
+                }
+            }
         }
     }
 

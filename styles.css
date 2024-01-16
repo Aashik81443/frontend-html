@@ -1253,7 +1253,12 @@ h4,
   }
 }
 .block-resources__title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .block-resources__title {
+    margin-bottom: 40px;
+  }
 }
 @media (min-width: 992px) {
   .block-resources__title {
@@ -1263,6 +1268,19 @@ h4,
 .block-resources__cards {
   display: flex;
   overflow: hidden;
+}
+.block-resources__cards .card-resources {
+  margin-right: 20px;
+}
+@media (min-width: 576px) {
+  .block-resources__cards .card-resources {
+    margin-right: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .block-resources__cards .card-resources {
+    margin-right: 60px;
+  }
 }
 .block-hire {
   margin-top: 80px;
