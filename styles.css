@@ -1104,10 +1104,12 @@ h4,
 }
 .block-clients {
   background-color: #f7f7fa;
+  overflow: hidden;
 }
 .block-clients .content {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 60px 0;
 }
 @media (max-width: 992px) {
@@ -1116,11 +1118,11 @@ h4,
   }
 }
 .block-clients img {
-  margin-right: 54px;
+  margin: 0 24px;
 }
 @media (max-width: 992px) {
   .block-clients img {
-    margin-right: 34px;
+    margin: 0 16px;
   }
 }
 .block-testimonial {

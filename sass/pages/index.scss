@@ -202,11 +202,14 @@
 
     &-clients {
         background-color: #f7f7fa;
+        overflow: hidden;
 
         .content {
             display: flex;
             justify-content: center;
+            align-items: center;
             padding: 60px 0;
+            // gap: 54px;
 
             @include lgDown {
                 padding: 45px 0;
@@ -214,10 +217,10 @@
         }
 
         img {
-            margin-right: 54px;
+            margin:0 24px;
 
             @include lgDown {
-                margin-right: 34px;
+                margin: 0 16px;
             }
         }
     }
