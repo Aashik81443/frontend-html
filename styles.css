@@ -851,6 +851,123 @@ h4,
   transform: translateX(50%);
 }
 
+.line {
+  display: none;
+}
+@media (min-width: 992px) {
+  .line {
+    display: block;
+    width: 100%;
+    background: linear-gradient(225deg, #f76680, #57007B);
+    height: 2px;
+    position: relative;
+  }
+  .line::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(225deg, #f76680, #57007B);
+    width: 2px;
+    height: 30px;
+    bottom: 0;
+    transform: translate(100px);
+  }
+  .line::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(225deg, #f76680, #57007B);
+    width: 2px;
+    height: 30px;
+    bottom: 0;
+    transform: translate(162px, 100%) rotate(180deg);
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .line::before {
+    transform: translate(160px);
+  }
+  .line::after {
+    transform: translate(232px, 100%) rotate(180deg);
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .line::before {
+    transform: translate(200px);
+  }
+  .line::after {
+    transform: translate(272px, 100%) rotate(180deg);
+  }
+}
+
+.second::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(225deg, #f76680, #57007B);
+  width: 2px;
+  height: 30px;
+  bottom: 0;
+  transform: translate(320px);
+}
+.second::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(225deg, #f76680, #57007B);
+  width: 2px;
+  height: 30px;
+  bottom: 0;
+  transform: translate(382px, 100%) rotate(180deg);
+}
+@media (min-width: 992px) {
+  .second::before {
+    transform: translate(410px);
+  }
+  .second::after {
+    transform: translate(482px, 100%) rotate(180deg);
+  }
+}
+@media (min-width: 1200px) {
+  .second::before {
+    transform: translate(570px);
+  }
+  .second::after {
+    transform: translate(642px, 100%) rotate(180deg);
+  }
+}
+
+.third::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(225deg, #f76680, #57007B);
+  width: 2px;
+  height: 30px;
+  bottom: 0;
+  transform: translate(540px);
+}
+.third::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(225deg, #f76680, #57007B);
+  width: 2px;
+  height: 30px;
+  bottom: 0;
+  transform: translate(602px, 100%) rotate(180deg);
+}
+@media (min-width: 992px) {
+  .third::before {
+    transform: translate(670px);
+  }
+  .third::after {
+    transform: translate(742px, 100%) rotate(180deg);
+  }
+}
+@media (min-width: 1200px) {
+  .third::before {
+    transform: translate(960px);
+  }
+  .third::after {
+    transform: translate(1032px, 100%) rotate(180deg);
+  }
+}
+
 .navbar {
   height: 79px;
   padding: 18.5px 25px;

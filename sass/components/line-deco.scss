@@ -1,0 +1,135 @@
+.line {
+    display: none;
+    
+    @include lg {
+        display: block;
+        width: 100%;
+        @include primary-gradient;
+        height: 2px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            @include primary-gradient;
+            width: 2px;
+            height: 30px;
+            bottom: 0;
+            transform: translate(100px);
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            @include primary-gradient;
+            width: 2px;
+            height: 30px;
+            bottom: 0;
+            transform: translate(162px, 100%) rotate(180deg);
+        }
+
+        @include lg {
+            &::before {
+                transform: translate(160px);
+            }
+
+            &::after {
+                transform: translate(232px, 100%) rotate(180deg);
+            }
+        }
+
+        @include xl {
+            &::before {
+                transform: translate(200px) ;
+            }
+
+            &::after {
+                transform: translate(272px, 100%) rotate(180deg);
+            }
+        }
+    }
+}
+
+.second {
+    &::before {
+        position: absolute;
+        content: '';
+        @include primary-gradient;
+        width: 2px;
+        height: 30px;
+        bottom: 0;
+        transform: translate(320px);
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        @include primary-gradient;
+        width: 2px;
+        height: 30px;
+        bottom: 0;
+        transform: translate(382px, 100%) rotate(180deg);
+    }
+
+    @include lg {
+        &::before {
+            transform: translate(410px);
+        }
+
+        &::after {
+            transform: translate(482px, 100%) rotate(180deg);
+        }
+    }
+
+    @include xl {
+        &::before {
+            transform: translate(570px);
+        }
+
+        &::after {
+            transform: translate(642px, 100%) rotate(180deg);
+        }
+    }
+}
+
+.third {
+    &::before {
+        position: absolute;
+        content: '';
+        @include primary-gradient;
+        width: 2px;
+        height: 30px;
+        bottom: 0;
+        transform: translate(540px);
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        @include primary-gradient;
+        width: 2px;
+        height: 30px;
+        bottom: 0;
+        transform: translate(602px, 100%) rotate(180deg);
+    }
+
+    @include lg {
+        &::before {
+            transform: translate(670px);
+        }
+
+        &::after {
+            transform: translate(742px, 100%) rotate(180deg);
+        }
+    }
+
+    @include xl {
+        &::before {
+            transform: translate(960px);
+        }
+
+        &::after {
+            transform: translate(1032px, 100%) rotate(180deg);
+        }
+    }
+}
