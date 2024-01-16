@@ -475,6 +475,7 @@ h4,
 }
 .card-service:hover {
   border: 2px solid #57007B;
+  transform: translateY(10%);
 }
 .card-service__media {
   display: inline-block;
@@ -1760,7 +1761,6 @@ h4,
 }
 @media only screen and (max-width: 1200px) {
   .block-building-software__info {
-    flex-shrink: 2;
     margin: 0 auto;
   }
 }
@@ -1770,7 +1770,6 @@ h4,
 }
 @media only screen and (max-width: 1200px) {
   .block-building-software__info-alt {
-    flex-shrink: 2;
     margin: 0 auto;
   }
 }

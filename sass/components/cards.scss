@@ -14,6 +14,7 @@
 
         &:hover {
             border: 2px solid $primary;
+            transform: translateY(10%);
         }
 
         &__media {
