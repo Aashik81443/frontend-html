@@ -1125,6 +1125,7 @@ h4,
 }
 .block-testimonial {
   padding: 125px 0 140px 0;
+  position: relative;
 }
 @media (max-width: 992px) {
   .block-testimonial {
@@ -1185,6 +1186,54 @@ h4,
 }
 @media (max-width: 992px) and (max-width: 991.98px) {
   .block-testimonial .col-2 .Customers .hide-content {
+    display: none;
+  }
+}
+.block-casestudies {
+  background-color: #f7f7fa;
+  padding: 88px 0;
+  position: relative;
+}
+.block-casestudies__cta {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+.block-casestudies .block-title {
+  margin-bottom: 80px;
+}
+.block-casestudies .bg-green {
+  background-color: #F0FFF7;
+}
+.block-casestudies .bg-red {
+  background-color: #FFF4F4;
+}
+.block-casestudies .bg-green-margin {
+  margin: 35px 0;
+}
+.block-casestudies .circle {
+  position: absolute;
+  left: 30%;
+}
+.block-casestudies .deco-up {
+  position: absolute;
+  top: -120px;
+  z-index: 1;
+  left: 10%;
+}
+@media (max-width: 992px) {
+  .block-casestudies .deco-up {
+    display: none;
+  }
+}
+.block-casestudies .deco-down {
+  position: absolute;
+  z-index: 1;
+  right: 10%;
+  top: -120px;
+}
+@media (max-width: 992px) {
+  .block-casestudies .deco-down {
     display: none;
   }
 }

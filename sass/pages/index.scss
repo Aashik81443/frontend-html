@@ -224,9 +224,12 @@
 
     &-testimonial {
         padding: 125px 0 140px 0;
+        position: relative;
+
         @include lgDown {
-            padding: 90px 0 ;
+            padding: 90px 0;
         }
+
         .row-1 {
             display: flex;
             align-items: center;
@@ -242,32 +245,33 @@
                     @include lgDown {
                         left: -30px;
                     }
-                    @include smDown{
+
+                    @include smDown {
                         left: -30px;
-                    }
-                }
-                }
-
-                .review::after {
-                    content: url(/assets/images/fluent_comma-right.png);
-                    position: absolute;
-                    bottom: -10px;
-                    right: 130px;
-
-                    @include lgDown {
-                        right: -30px;
                     }
                 }
             }
 
-            .review {
-                position: relative;
+            .review::after {
+                content: url(/assets/images/fluent_comma-right.png);
+                position: absolute;
+                bottom: -10px;
+                right: 130px;
 
-                p {
-                    max-width: 535px;
-                    text-align: center;
-                    margin: 64px auto;
-                    color: $gray-600;
+                @include lgDown {
+                    right: -30px;
+                }
+            }
+        }
+
+        .review {
+            position: relative;
+
+            p {
+                max-width: 535px;
+                text-align: center;
+                margin: 64px auto;
+                color: $gray-600;
 
             }
         }
@@ -282,14 +286,70 @@
 
                 @include lgDown {
                     gap: 45px;
-                    @include mdDown{
-                        .hide-content{
+
+                    @include mdDown {
+                        .hide-content {
                             display: none;
                         }
                     }
                 }
             }
         }
+    }
+
+    &-casestudies {
+        background-color: #f7f7fa;
+        padding: 88px 0;
+        position: relative;
+
+        &__cta {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+        }
+
+        .block-title {
+            margin-bottom: 80px;
+        }
+
+        .bg-green {
+            background-color: $lime-green;
+        }
+
+        .bg-red {
+            background-color: $pale-red;
+        }
+
+        .bg-green-margin {
+            margin: 35px 0;
+        }
+
+        .circle {
+            position: absolute;
+            left: 30%;
+            // transform: translate(107px, 33px);
+        }
+
+        .deco-up {
+            position: absolute;
+            top: -120px;
+            z-index: 1;
+            left: 10%;
+            @include lgDown{
+                display: none;
+            }
+        }
+
+        .deco-down {
+            position: absolute;
+            z-index: 1;
+            right: 10%;
+            top: -120px;
+            @include lgDown{
+                display: none;
+            }
+        }
+
     }
 
     &-hire {
