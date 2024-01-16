@@ -374,6 +374,128 @@
 
     }
 
+    &-alcaline {
+        margin-top: 32px;
+
+        @include md {
+            margin-top: 64px;
+        }
+
+        @include lg {
+            margin-top: 96px;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+
+            @include sm {
+                margin-bottom: 40px;
+            }
+
+            @include lg {
+                margin-bottom: 66px;
+            }
+        }
+        &__cards {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .row-1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .card-alcaline {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .row-2 {
+                display: none;
+            }
+
+
+            .row-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .card-alcaline {
+                    margin-bottom: 20px;
+                }
+            }
+
+            @include sm {
+                flex-direction: row;
+
+                .row-1 {
+                    .card-alcaline {
+                        margin-right: 20px;
+                    }
+                }
+
+                .row-3 {
+                    .card-alcaline {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            @include lg {
+                flex-direction: column;
+
+                .row-1 {
+                    flex-direction: row;
+                    padding-left: 42px;
+                    padding-right: 118px;
+                    gap: 20px;
+
+                    .card-alcaline {
+                        margin-bottom: 0;
+                        margin-right: 0;
+                    }
+                }
+
+                .row-2 {
+                    display: flex;
+                    align-items: center;
+                    padding: 20px 0;
+
+                    img {
+                        margin-left: 6px;
+                        display: block;
+                    }
+                }
+
+                .row-3 {
+                    flex-direction: row;
+                    padding-left: 116px;
+                    padding-right: 52px;
+                    gap: 20px;
+
+                    .card-alcaline {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            @include xl {
+                .row-1 {
+                    justify-content: space-between;
+                }
+
+                .row-2 {
+                    padding: 24px 0;
+                }
+
+                .row-3 {
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
     &-development {
         padding: 80px 0 90px 0;
         background-color: #F7F7FA;
@@ -479,7 +601,6 @@
             }
         }
     }
-
 
     &-hire {
         margin-top: 80px;

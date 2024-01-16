@@ -1375,6 +1375,111 @@ h4,
     display: none;
   }
 }
+.block-alcaline {
+  margin-top: 32px;
+}
+@media (min-width: 768px) {
+  .block-alcaline {
+    margin-top: 64px;
+  }
+}
+@media (min-width: 992px) {
+  .block-alcaline {
+    margin-top: 96px;
+  }
+}
+.block-alcaline__title {
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .block-alcaline__title {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .block-alcaline__title {
+    margin-bottom: 66px;
+  }
+}
+.block-alcaline__cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.block-alcaline__cards .row-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block-alcaline__cards .row-1 .card-alcaline {
+  margin-bottom: 20px;
+}
+.block-alcaline__cards .row-2 {
+  display: none;
+}
+.block-alcaline__cards .row-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block-alcaline__cards .row-3 .card-alcaline {
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .block-alcaline__cards {
+    flex-direction: row;
+  }
+  .block-alcaline__cards .row-1 .card-alcaline {
+    margin-right: 20px;
+  }
+  .block-alcaline__cards .row-3 .card-alcaline {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .block-alcaline__cards {
+    flex-direction: column;
+  }
+  .block-alcaline__cards .row-1 {
+    flex-direction: row;
+    padding-left: 42px;
+    padding-right: 118px;
+    gap: 20px;
+  }
+  .block-alcaline__cards .row-1 .card-alcaline {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  .block-alcaline__cards .row-2 {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .block-alcaline__cards .row-2 img {
+    margin-left: 6px;
+    display: block;
+  }
+  .block-alcaline__cards .row-3 {
+    flex-direction: row;
+    padding-left: 116px;
+    padding-right: 52px;
+    gap: 20px;
+  }
+  .block-alcaline__cards .row-3 .card-alcaline {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .block-alcaline__cards .row-1 {
+    justify-content: space-between;
+  }
+  .block-alcaline__cards .row-2 {
+    padding: 24px 0;
+  }
+  .block-alcaline__cards .row-3 {
+    justify-content: space-between;
+  }
+}
 .block-development {
   padding: 80px 0 90px 0;
   background-color: #F7F7FA;
