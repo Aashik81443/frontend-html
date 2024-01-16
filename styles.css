@@ -1596,10 +1596,22 @@ h4,
 .block-building-software__content {
   display: flex;
   align-items: center;
+  margin-bottom: 95px;
 }
 @media only screen and (max-width: 1200px) {
   .block-building-software__content {
     flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
+.block-building-software__content-alt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 95px;
+}
+@media only screen and (max-width: 1200px) {
+  .block-building-software__content-alt {
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -1609,6 +1621,16 @@ h4,
 }
 @media only screen and (max-width: 1200px) {
   .block-building-software__info {
+    flex-shrink: 2;
+    margin: 0 auto;
+  }
+}
+.block-building-software__info-alt {
+  margin-left: 124px;
+  max-width: 534px;
+}
+@media only screen and (max-width: 1200px) {
+  .block-building-software__info-alt {
     flex-shrink: 2;
     margin: 0 auto;
   }
@@ -1623,7 +1645,22 @@ h4,
     margin-bottom: 20px;
   }
 }
+.block-building-software__img-alt {
+  position: relative;
+  width: 575px;
+  margin-bottom: 35px;
+}
 .block-building-software__img-main {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+.block-building-software__img-main-alt {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+.block-building-software__img-main-alt2 {
   position: relative;
   width: 100%;
   z-index: 0;
@@ -1635,12 +1672,42 @@ h4,
   z-index: -1;
   transform: translate(-30%, -30%);
 }
+.block-building-software__img-sphere-alt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(100%, 50%);
+  z-index: -1;
+}
+.block-building-software__img-sphere-alt2 {
+  height: 43px;
+  width: 43px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-40%, 40%);
+  z-index: -1;
+}
 .block-building-software__img-sphere2 {
   position: absolute;
   left: 0;
   bottom: 0;
   transform: translate(750%, 50%);
   z-index: -1;
+}
+.block-building-software__img-sphere2-alt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transform: translate(30%, -30%);
+}
+.block-building-software__img-sphere2-alt2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translate(800%, -50%);
 }
 
 .site-footer p {

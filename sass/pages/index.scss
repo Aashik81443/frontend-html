@@ -580,7 +580,7 @@
         .block-title {
             margin-bottom: 73px;
 
-            @media only screen and (max-width: 1200px){
+            @media only screen and (max-width: 1200px) {
                 margin-bottom: 33px;
             }
         }
@@ -589,11 +589,23 @@
         &__content {
             display: flex;
             align-items: center;
+            margin-bottom: 95px;
 
-            @media only screen and (max-width: 1200px){
+            @media only screen and (max-width: 1200px) {
                 flex-wrap: wrap-reverse;
                 justify-content: center;
             }
+
+        &-alt {
+            display: flex;
+            align-items: center;
+            margin-bottom: 95px;
+
+            @media only screen and (max-width: 1200px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
 
         }
 
@@ -601,27 +613,56 @@
             margin-right: 124px;
             max-width: 534px;
 
-            @media only screen and (max-width: 1200px){
+            @media only screen and (max-width: 1200px) {
                 flex-shrink: 2;
                 margin: 0 auto;
             }
 
+
+            &-alt {
+                margin-left: 124px;
+                max-width: 534px;
+
+                @media only screen and (max-width: 1200px) {
+                    flex-shrink: 2;
+                    margin: 0 auto;
+                }
+
+            }
         }
 
-       
+
         &__img {
             position: relative;
             width: 575px;
 
-            @media only screen and (max-width: 1200px){
+            @media only screen and (max-width: 1200px) {
                 flex-shrink: 1;
                 margin-bottom: 20px;
+            }
+
+            &-alt {
+                position: relative;
+                width: 575px;
+                margin-bottom: 35px;
             }
 
             &-main {
                 position: relative;
                 width: 100%;
                 z-index: 0;
+
+                &-alt{
+                    position: relative;
+                    width: 100%;
+                    z-index: 0;
+                }
+
+                &-alt2{
+                    position: relative;
+                    width: 100%;
+                    z-index: 0;
+                }
             }
 
             &-sphere {
@@ -630,6 +671,24 @@
                 left: 0;
                 z-index: -1;
                 transform: translate(-30%, -30%);
+
+                &-alt{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transform: translate(100%, 50%);
+                    z-index: -1;
+                }
+
+                &-alt2{
+                    height: 43px;
+                    width: 43px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transform: translate(-40%, 40%);
+                    z-index: -1;
+                }
             }
 
             &-sphere2 {
@@ -638,6 +697,22 @@
                 bottom: 0;
                 transform: translate(750%, 50%);
                 z-index: -1;
+
+                &-alt{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: -1;
+                    transform: translate(30%, -30%);
+                }
+
+                &-alt2{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transform: translate(800%, -50%);
+                }
             }
         }
     }
