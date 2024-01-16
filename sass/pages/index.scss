@@ -208,6 +208,8 @@
     &-clients {
         background-color: #f7f7fa;
         overflow: hidden;
+        border-bottom: 1px solid #E7DAED;
+        border-top: 1px solid #E7DAED;
 
         .content {
             display: flex;
@@ -242,6 +244,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @include xsDown{
+                align-items:end;
+            }
 
             .col-2 {
                 .review::before {
@@ -280,7 +285,6 @@
                 text-align: center;
                 margin: 64px auto;
                 color: $gray-600;
-
             }
         }
 
@@ -300,7 +304,13 @@
                             display: none;
                         }
                     }
+                 
                 }
+            }
+        }
+        @include xsDown{
+            .hide-content-small{
+                display: none;
             }
         }
     }
@@ -309,6 +319,8 @@
         background-color: #f7f7fa;
         padding: 88px 0;
         position: relative;
+        border-bottom: 1px solid #E7DAED;
+        border-top: 1px solid #E7DAED;
 
         &__cta {
             display: flex;
@@ -361,10 +373,12 @@
         }
 
     }
-    
+
     &-development {
         padding: 80px 0 90px 0;
         background-color: #F7F7FA;
+        border-bottom: 1px solid #E7DAED;
+        border-top: 1px solid #E7DAED;
         @include lgDown{
             padding: 70px 0 80px 0;
         }
