@@ -1555,6 +1555,39 @@ h4,
 .block-development__content .img-6 {
   background-image: linear-gradient(224deg, #F76680 0%, #57007B 100%);
 }
+.block-tech {
+  padding: 80px 0 90px 0;
+  border-bottom: 1px solid #E7DAED;
+}
+@media (max-width: 575.98px) {
+  .block-tech {
+    padding: 60px 0;
+  }
+}
+.block-tech .tab-bar {
+  margin: 35px auto 70px auto;
+}
+@media (max-width: 575.98px) {
+  .block-tech .tab-bar {
+    margin: 30px auto 40px auto;
+  }
+}
+.block-tech__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.block-tech img {
+  flex: 0 0 calc(20% - 10px);
+  box-sizing: border-box;
+  margin: 0 4px 30px 4px;
+}
+@media (max-width: 575.98px) {
+  .block-tech img {
+    margin-bottom: 20px;
+  }
+}
 .block-resources {
   margin-top: 32px;
 }
@@ -1692,6 +1725,7 @@ h4,
 }
 .block-building-software .block-title {
   margin-bottom: 73px;
+  margin-top: 70px;
 }
 @media only screen and (max-width: 1200px) {
   .block-building-software .block-title {
