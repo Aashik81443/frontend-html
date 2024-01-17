@@ -1,6 +1,7 @@
 .card {
     &-service {
         border: 2px solid transparent;
+        background-color: $white;
         border-radius: 7px;
         max-width: 333px;
         padding: 28px 16px;
@@ -13,7 +14,10 @@
         }
 
         &:hover {
-            border: 2px solid $primary;
+            background: linear-gradient($white, $white) padding-box,
+                linear-gradient(225deg, $soft-red, $dark-violet) border-box;
+            border-radius: 7px;
+            border: 2px solid transparent;
             transform: translateY(10%);
         }
 
@@ -61,10 +65,12 @@
                 width: 60px;
                 height: 60px;
             }
+
             @include lg {
                 width: 65px;
                 height: 65px;
             }
+
             @include xl {
                 width: 78px;
                 height: 78px;
