@@ -175,6 +175,20 @@
                             slidesToScroll: 1,
                             autoplay: true,
                             autoplaySpeed: 1800,
+                            responsive: [
+                                {
+                                    breakpoint: 768,
+                                    settings: {
+                                        slidesToShow: 4
+                                    }
+                                },
+                                {
+                                    breakpoint: 576,
+                                    settings: {
+                                        slidesToShow: 3
+                                    }
+                                }
+                            ]
                         });
                     });
                 </script>
@@ -199,7 +213,7 @@
                                         and digital marketing agencies. One of the best agencies I’ve came across so
                                         far. Wouldn’t be hesitated to introduce their work to someone else.</p>
                                 </div>
-                                <div class="Customers">
+                                <div class="Customers slider-customer">
                                     <div class="card-customer">
                                         <div class="card-customer__media">
                                             <img class="pp" src="./assets/images/headshot.png" alt="" width="85"
@@ -308,6 +322,7 @@
                         </div>
                     </div>
                 </div>
+
             </section><!--testimonial section ends here-->
 
             <section class="block-casestudies">

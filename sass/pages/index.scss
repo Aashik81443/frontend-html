@@ -120,7 +120,7 @@
             display: flex;
             flex-wrap: wrap;
 
-            .card-service{
+            .card-service {
                 margin: 20px;
             }
         }
@@ -221,7 +221,8 @@
             @include lgDown {
                 padding: 45px 0;
             }
-            @include xsDown{
+
+            @include xsDown {
                 padding: 30px;
             }
         }
@@ -247,8 +248,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            @include xsDown{
-                align-items:end;
+
+            @include xsDown {
+                align-items: end;
             }
 
             .col-2 {
@@ -307,12 +309,13 @@
                             display: none;
                         }
                     }
-                 
+
                 }
             }
         }
-        @include xsDown{
-            .hide-content-small{
+
+        @include xsDown {
+            .hide-content-small {
                 display: none;
             }
         }
@@ -399,6 +402,7 @@
                 margin-bottom: 66px;
             }
         }
+
         &__cards {
             display: flex;
             justify-content: center;
@@ -504,16 +508,19 @@
         background-color: #F7F7FA;
         border-bottom: 1px solid #E7DAED;
         border-top: 1px solid #E7DAED;
-        @include lgDown{
+
+        @include lgDown {
             padding: 70px 0 80px 0;
         }
+
         &__content {
             margin-top: 80px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            @include lgDown{
+
+            @include lgDown {
                 flex-direction: column;
                 margin-top: 65px;
             }
@@ -522,25 +529,32 @@
                 flex: 0 0 calc(50% - 10px);
                 margin-bottom: 24px;
                 box-sizing: border-box;
-                @include xlDown{
+
+                @include xlDown {
                     margin-bottom: 20px;
                 }
             }
-            .left-margin{
+
+            .left-margin {
                 margin-left: 12px;
-                @include xlDown{
+
+                @include xlDown {
                     margin-left: 10px;
                 }
-                @include lgDown{
+
+                @include lgDown {
                     margin-left: 0;
                 }
             }
-            .right-margin{
+
+            .right-margin {
                 margin-right: 12px;
-                @include xlDown{
+
+                @include xlDown {
                     margin-right: 10px;
                 }
-                @include lgDown{
+
+                @include lgDown {
                     margin-right: 0px;
                 }
             }
@@ -552,41 +566,51 @@
             .img-3 {
                 background-image: linear-gradient(224deg, #FF92AE 8.18%, #FF3D9A 95.84%);
             }
+
             .img-4 {
                 background-image: linear-gradient(224deg, #67E9F1 0%, #24E795 100%);
             }
+
             .img-5 {
                 background-image: linear-gradient(224deg, #FFEF5E 0%, #F7936F 100%);
             }
+
             .img-6 {
                 background-image: linear-gradient(224deg, #F76680 0%, #57007B 100%);
             }
         }
     }
 
-    &-tech{
+    &-tech {
         padding: 80px 0 90px 0;
-        @include xsDown{
+
+        @include xsDown {
             padding: 60px 0;
         }
+
         border-bottom: 1px solid #E7DAED;
-        .tab-bar{
+
+        .tab-bar {
             margin: 35px auto 70px auto;
-            @include xsDown{
+
+            @include xsDown {
                 margin: 30px auto 40px auto;
             }
         }
-        &__content{
+
+        &__content {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
         }
-        img{
-            flex: 0 0 calc(20% - 10px); 
+
+        img {
+            flex: 0 0 calc(20% - 10px);
             box-sizing: border-box;
             margin: 0 4px 30px 4px;
-            @include xsDown{
+
+            @include xsDown {
                 margin-bottom: 20px;
             }
         }
@@ -750,16 +774,16 @@
                 justify-content: center;
             }
 
-        &-alt {
-            display: flex;
-            align-items: center;
-            margin-bottom: 95px;
+            &-alt {
+                display: flex;
+                align-items: center;
+                margin-bottom: 95px;
 
-            @media only screen and (max-width: 1200px) {
-                flex-wrap: wrap;
-                justify-content: center;
+                @media only screen and (max-width: 1200px) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
             }
-        }
 
         }
 
@@ -804,13 +828,13 @@
                 width: 100%;
                 z-index: 0;
 
-                &-alt{
+                &-alt {
                     position: relative;
                     width: 100%;
                     z-index: 0;
                 }
 
-                &-alt2{
+                &-alt2 {
                     position: relative;
                     width: 100%;
                     z-index: 0;
@@ -824,7 +848,7 @@
                 z-index: -1;
                 transform: translate(-30%, -30%);
 
-                &-alt{
+                &-alt {
                     position: absolute;
                     left: 0;
                     bottom: 0;
@@ -832,7 +856,7 @@
                     z-index: -1;
                 }
 
-                &-alt2{
+                &-alt2 {
                     height: 43px;
                     width: 43px;
                     position: absolute;
@@ -850,7 +874,7 @@
                 transform: translate(750%, 50%);
                 z-index: -1;
 
-                &-alt{
+                &-alt {
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -858,7 +882,7 @@
                     transform: translate(30%, -30%);
                 }
 
-                &-alt2{
+                &-alt2 {
                     position: absolute;
                     top: 0;
                     left: 0;
