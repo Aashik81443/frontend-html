@@ -1242,6 +1242,11 @@ h4,
     padding: 45px 0;
   }
 }
+@media (max-width: 575.98px) {
+  .block-clients .content {
+    padding: 30px;
+  }
+}
 .block-clients img {
   margin: 0 24px;
 }

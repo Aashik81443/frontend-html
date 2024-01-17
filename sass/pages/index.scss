@@ -221,6 +221,9 @@
             @include lgDown {
                 padding: 45px 0;
             }
+            @include xsDown{
+                padding: 30px;
+            }
         }
 
         img {
