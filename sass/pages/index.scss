@@ -892,4 +892,43 @@
             }
         }
     }
+
+    //practiced with slick slider in service section
+    &-services1 {
+        background-color: #F9F9FF;
+        padding: 50px 0;
+        position: relative;
+
+        &__content {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            .card-service {
+                margin: 20px 5px 30px 5px;
+                background-color: #FAFAFA;
+
+                @include xlDown {
+                    margin: 70px 20px 50px 20px;
+                }
+
+                @include lg {
+                    margin: 70px 30px 50px 30px;
+                }
+                .no-hover{
+                    
+                }
+            }
+
+        }
+
+        .slick-center {
+            transform: translateY(10%);
+            background: linear-gradient($white, $white) padding-box,
+                linear-gradient(to right, $primary, $secondary) border-box;
+            border-radius: 7px;
+            border: 1px solid transparent;
+        }
+
+    }
 }
